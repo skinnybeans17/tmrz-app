@@ -15,6 +15,7 @@ export const timersSlice = createSlice({
       },
   
           toggleTimer: (state, action) => {
+            console.log(state.value, action.payload)
               state.value[action.payload].isRunning = !state.value[action.payload].isRunning
           },
 

@@ -7,7 +7,7 @@ export default function ListTimers() {
 	
 	return (
 		<div>
-			{timers.map((timer, i) => <TimerView key={`timer-${i}`} {...timer} />)}
+			{timers.map((timer, i) => <TimerView key={`timer-${i}`} index={i} {...timer} />)}
 		</div>
 	)
 }
