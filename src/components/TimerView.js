@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch } from 'react-redux'
 import { toggleTimer, reset } from "../features/timers/timersSlice"; 
-import { formatTime } from '../utils';
 import './TimerView.css'
 
 export default function TimerView({ index, name, time, isRunning }) {
